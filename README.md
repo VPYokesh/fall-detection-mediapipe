@@ -32,7 +32,7 @@ To detect fall events in video data by analyzing human body posture using pose e
 ---
 
 ## 📂 Project Structure
-
+```
 fall-detection-mediapipe/
 │
 ├── pose_detection.py
@@ -48,7 +48,7 @@ fall-detection-mediapipe/
 ├── annotated_outputs/
 │ ├── annotated_video1.mp4
 │ ├── annotated_video2.mp4
-
+```
 ---
 
 ## 🛠️ Requirements
