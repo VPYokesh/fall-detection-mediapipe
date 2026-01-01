@@ -49,9 +49,6 @@ fall-detection-mediapipe/
 │ ├── annotated_video1.mp4
 │ ├── annotated_video2.mp4
 
-
-> Note: The virtual environment folder is intentionally not included.
-
 ---
 
 ## 🛠️ Requirements
@@ -88,3 +85,17 @@ Stores detected fall events with timestamps and corresponding video names.
 Example log entry:
 
 Fall detected at 00:00:42 in video1.mp4
+
+If no fall occurs in a video, no timestamp is recorded, indicating correct behavior.
+
+🧠 Detection Logic
+
+A fall is detected when the following conditions are met:
+
+The torso becomes near-horizontal (low shoulder–hip angle)
+
+The vertical body height (head to ankle distance) significantly reduces
+
+The posture persists across multiple consecutive frames to avoid false positives
+
+This multi-condition approach improves reliability and minimizes incorrect detections due to brief bending or sitting.
