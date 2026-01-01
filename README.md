@@ -68,11 +68,11 @@ pip install -r requirements.txt
 
 ▶️ How to Run
 
-Place all input video files inside the videos/ folder.
+- Place all input video files inside the videos/ folder.
 
-Run the fall detection script:
+- Run the fall detection script:
 
-python pose_detection.py
+- python pose_detection.py
 
 📤 Output
 
@@ -90,12 +90,12 @@ If no fall occurs in a video, no timestamp is recorded, indicating correct behav
 
 🧠 Detection Logic
 
-A fall is detected when the following conditions are met:
+- A fall is detected when the following conditions are met:
 
-The torso becomes near-horizontal (low shoulder–hip angle)
+- The torso becomes near-horizontal (low shoulder–hip angle)
 
-The vertical body height (head to ankle distance) significantly reduces
+- The vertical body height (head to ankle distance) significantly reduces
 
-The posture persists across multiple consecutive frames to avoid false positives
+- The posture persists across multiple consecutive frames to avoid false positives
 
-This multi-condition approach improves reliability and minimizes incorrect detections due to brief bending or sitting.
+- This multi-condition approach improves reliability and minimizes incorrect detections due to brief bending or sitting.
