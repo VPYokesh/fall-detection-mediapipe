@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 ```
 
-##▶️ How to Run
+## ▶️ How to Run
 
 - Place all input video files inside the videos/ folder.
 
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 
 - python pose_detection.py
 
-##📤 Output
+## 📤 Output
 
 - annotated_outputs/
 - Contains output videos with skeleton overlays and posture labels.
@@ -82,13 +82,13 @@ pip install -r requirements.txt
 - fall_detection_log.txt
 - Stores detected fall events with timestamps and corresponding video names.
 
-###Example log entry:
+### Example log entry:
 
 - Fall detected at 00:00:42 in video1.mp4
 
 - If no fall occurs in a video, no timestamp is recorded, indicating correct behavior.
 
-##🧠 Detection Logic
+## 🧠 Detection Logic
 
 - A fall is detected when the following conditions are met:
 
